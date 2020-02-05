@@ -1,15 +1,43 @@
-<html>
- 
+<!DOCTYPE html>
+
+<!-- CSS Stylesheets with Relative Paths -->
+
+<html lang="en-us">
 <head>
-  <title>My Profile in HTML updated.</title>
+  <meta charset="UTF-8">
+  <title>CSS Stylesheets with Relative Paths</title>
+
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-  
+
 <body>
- <section>
-  My Profile in HTML updated.
- </section>
- <section>
-  <a target="_blank" href="https://github.com/bandipara/fema_analytics"> Check out my latest project here!</a>
- </section>
-</body>  
+
+  <header>
+    <h1>Student Bio</h1>
+  </header>
+
+  <main class="container">
+    <section id="main-bio">
+      <section id="figure">
+        <h2 id="bio-name">Paul Kazalski</h2>
+        <img id="bio-image" src="https://placehold.it/200x200" alt="Your Name">
+      </section>
+      <p>Write a short paragraph or two about yourself, or use placeholder text from <a href="http://www.lipsum.com/">www.lipsum.com</a></p>
+    </section>
+
+    <aside id="contact-info">
+      <h2>Contact Info</h2>
+      <ul>
+        <li><strong>Email:</strong> <a href="#">paul.kazalski@gmail.com</a></li>
+        <li><strong>Github:</strong> <a href="#">github.com/PaulKazalski</a></li>
+        <li><a target="_blank" href="https://github.com/bandipara/fema_analytics"> Check out my latest project here!</a></li>
+      </ul>
+    </aside>
+  </main>
+
+</body>
+
 </html>
+ 
